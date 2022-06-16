@@ -27,9 +27,12 @@ export const Crear = ({setListadoState}) => {
         }
         //Guardar estado
         setPeliState(peli);
-       setListadoState(elementos => {
-        console.log('elementos', elementos)
-          return [ ...elementos, peli]
+       setListadoState(elementos => { 
+          if(elementos != null){
+            
+            return [ ...elementos, peli]
+          }
+        
         })
 
         //Guardar en el local storage
