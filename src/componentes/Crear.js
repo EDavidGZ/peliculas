@@ -31,6 +31,8 @@ export const Crear = ({setListadoState}) => {
           if(elementos != null){
             
             return [ ...elementos, peli]
+          } else {
+            return [peli]
           }
         
         })
