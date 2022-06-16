@@ -28,6 +28,7 @@ export const Crear = ({setListadoState}) => {
         //Guardar estado
         setPeliState(peli);
        setListadoState(elementos => {
+        console.log('elementos', elementos)
           return [ ...elementos, peli]
         })
 
